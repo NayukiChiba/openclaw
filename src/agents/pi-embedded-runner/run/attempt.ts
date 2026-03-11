@@ -22,7 +22,7 @@ import type {
   PluginHookBeforeAgentStartResult,
   PluginHookBeforePromptBuildResult,
 } from "../../../plugins/types.js";
-import { resolvePromptModeForSession } from "../../../routing/session-key.js";
+import { isSubagentSessionKey, resolvePromptModeForSession } from "../../../routing/session-key.js";
 export { resolvePromptModeForSession };
 import { joinPresentTextSegments } from "../../../shared/text/join-segments.js";
 import { resolveSignalReactionLevel } from "../../../signal/reaction-level.js";

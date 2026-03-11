@@ -9,12 +9,11 @@ import { DEFAULT_ACCOUNT_ID, normalizeAccountId } from "./account-id.js";
 
 export {
   getSubagentDepth,
-  isCronSessionKey,
   isAcpSessionKey,
-  isSubagentSessionKey,
   parseAgentSessionKey,
   type ParsedAgentSessionKey,
 } from "../sessions/session-key-utils.js";
+export { isCronSessionKey, isSubagentSessionKey };
 
 export function resolvePromptModeForSession(sessionKey?: string): "minimal" | "full" {
   if (!sessionKey) return "full";
